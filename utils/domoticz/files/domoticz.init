@@ -16,7 +16,7 @@ start_domoticz() {
 	config_get ssldhparam "$section" "ssldhparam"
 	config_get sslwww "$section" "sslwww"
 	config_get syslog "$section" "syslog"
-	config_get userdata "$section" "userdata" userdata /var/lib/domoticz
+	config_get userdata "$section" "userdata" userdata /etc/domoticz
 
 	[ -n "$loglevel" ] && procd_append_param command -loglevel "$loglevel"
 	[ -n "$syslog" ] && procd_append_param command -syslog "$syslog"

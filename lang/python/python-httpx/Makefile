@@ -31,7 +31,8 @@ define Package/python3-httpx
   DEPENDS:=+python3-certifi \
 	+python3-httpcore \
 	+python3-rfc3986 \
-	+python3-sniffio
+	+python3-sniffio \
+	+python3-charset-normalizer
 endef
 
 define Package/python3-httpx/description

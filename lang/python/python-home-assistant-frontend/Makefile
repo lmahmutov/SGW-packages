@@ -28,7 +28,7 @@ define Package/python3-home-assistant-frontend
   SUBMENU:=Python
   TITLE:=Home Assistant frontend
   URL:=https://pypi.org/project/home-assistant-frontend/
-  DEPENDS:=+python3-light
+  DEPENDS:=+python3-light 
 endef
 
 define Package/python3-home-assistant-frontend/description

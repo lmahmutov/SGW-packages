@@ -28,7 +28,7 @@ define Package/homeassistant
   SUBMENU:=Python
   TITLE:=Open source home automation
   URL:=https://github.com/home-assistant/core
-  DEPENDS:=python3-dev +python3-pip +python3-aiohttp +python3-astral \
+  DEPENDS:=+python3-dev +python3-pip +python3-aiohttp +python3-astral \
 	+python3-async-timeout +python3-attrs +python3-awesomeversion \
 	+python3-bcrypt +python3-certifi +python3-ciso8601 +python3-cryptography \
 	+python3-httpx +python3-jinja2 +python3-pyjwt +python3-requests \
@@ -40,7 +40,8 @@ define Package/homeassistant
 	+python3-pynacl +python3-pyserial +python3-pyudev +python3-sqlalchemy \
 	+python3-zeroconf +scapy +python3-cryptodome +python3-gtts +python3-h11 \
 	+python3-httplib2 +python3-mutagen +python3-paho-mqtt +python3-pymetno \
-	+python3-pyotp +python3-pyqrcode +python3-urllib3 +python3-websocket-client +python3-xmltodict
+	+python3-pyotp +python3-pyqrcode +python3-urllib3 +python3-websocket-client +python3-xmltodict \
+	+python3-pyturbojpeg +python3-tzdata
 endef
 
 define Package/homeassistant/description
