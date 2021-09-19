@@ -39,4 +39,3 @@ endef
 
 $(eval $(call Py3Package,python3-snitun))
 $(eval $(call BuildPackage,python3-snitun))
-$(eval $(call BuildPackage,python3-snitun))
