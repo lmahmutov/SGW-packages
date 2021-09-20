@@ -29,14 +29,19 @@ include ../pypi.mk
 include $(INCLUDE_DIR)/package.mk
 include ../python3-package.mk
 
+PYTHON3_PKG_SETUP_GLOBAL_ARGS += \
+	build_ext \
+	--fcompiler=none
+
+
 define Package/python3-numpy
   SUBMENU:=Python
   SECTION:=lang
   CATEGORY:=Languages
   TITLE:=The fundamental package for scientific computing with Python
   URL:=https://www.numpy.org/
-  DEPENDS:=@!SOFT_FLOAT +INSTALL_GFORTRAN:libgfortran +python3 \
-	   +NUMPY_OPENBLAS_SUPPORT:openblas
+  DEPENDS:=+python3 \
+ 	   +NUMPY_OPENBLAS_SUPPORT:openblas
 endef
 
 # We need to duplicate the omitted arhitectures same as openblas
@@ -55,12 +60,12 @@ endef
 ifdef CONFIG_NUMPY_OPENBLAS_SUPPORT
 define Build/Prepare/numpy-sitecfg
 	echo "[DEFAULT]"                                 >  $(PKG_BUILD_DIR)/site.cfg
-	echo "library_dirs = $(STAGING_DIR)/usr/lib"     >> $(PKG_BUILD_DIR)/site.cfg
-	echo "include_dirs = $(STAGING_DIR)/usr/include" >> $(PKG_BUILD_DIR)/site.cfg
+	echo "library_dirs = $(STAGING_DIR)/opt/lib"     >> $(PKG_BUILD_DIR)/site.cfg
+	echo "include_dirs = $(STAGING_DIR)/opt/include" >> $(PKG_BUILD_DIR)/site.cfg
 	echo                                             >> $(PKG_BUILD_DIR)/site.cfg
 	echo "[openblas]"                                >> $(PKG_BUILD_DIR)/site.cfg
 	echo "libraries = openblas"                      >> $(PKG_BUILD_DIR)/site.cfg
-	echo "runtime_library_dirs = /usr/lib"           >> $(PKG_BUILD_DIR)/site.cfg
+	echo "runtime_library_dirs = /opt/lib"           >> $(PKG_BUILD_DIR)/site.cfg
 endef
 endif
 

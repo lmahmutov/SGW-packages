@@ -34,7 +34,8 @@ define Package/python3-pyroute2
 	  +python3-logging \
 	  +python3-multiprocessing \
 	  +python3-sqlite3 \
-	  +python3-ctypes
+	  +python3-ctypes \
+	  +python3-psutil
 endef
 
 define Package/python3-pyroute2/description

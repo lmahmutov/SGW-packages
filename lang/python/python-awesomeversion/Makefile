@@ -28,7 +28,7 @@ define Package/python3-awesomeversion
   SUBMENU:=Python
   TITLE:=AwesomeVersion
   URL:=https://pypi.org/project/awesomeversion/
-  DEPENDS:=
+  DEPENDS:=+python3-light
 endef
 
 define Package/python3-awesomeversion/description

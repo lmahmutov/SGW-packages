@@ -8,8 +8,8 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=python-requests
-PKG_VERSION:=2.25.1
-PKG_RELEASE:=1
+PKG_VERSION:=2.26.0
+PKG_RELEASE:=1a
 
 PKG_MAINTAINER:=Josef Schlehofer <josef.schlehofer@nic.cz>, Alexandru Ardelean <ardeleanalex@gmail.com>
 PKG_LICENSE:=Apache-2.0
@@ -34,7 +34,8 @@ define Package/python3-requests
 	  +python3-chardet  \
 	  +python3-idna  \
 	  +python3-urllib3  \
-	  +python3-certifi
+	  +python3-certifi \
+	  +python3-charset-normalizer
 endef
 
 define Package/python3-requests/description

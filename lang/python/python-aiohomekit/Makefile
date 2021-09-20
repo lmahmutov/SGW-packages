@@ -28,7 +28,10 @@ define Package/python3-aiohomekit
   SUBMENU:=Python
   TITLE:=HomeKit protocol for controlling Homekit
   URL:=https://pypi.org/project/aiohomekit/
-  DEPENDS:=+python3-commentjson +python3-cryptography +python3-zeroconf
+  DEPENDS:= \
+	+python3-commentjson \
+	+python3-cryptography \
+	+python3-zeroconf
 endef
 
 define Package/python3-aiohomekit/description

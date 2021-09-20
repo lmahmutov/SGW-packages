@@ -28,7 +28,10 @@ define Package/python3-aiodiscover
   SUBMENU:=Python
   TITLE:=Discover hosts by arp and ptr lookup
   URL:=https://pypi.org/project/aiodiscover/
-  DEPENDS:=+python3-dns +python3-ifaddr +python3-pyroute2
+  DEPENDS:= \
+	+python3-dns \
+	+python3-ifaddr \
+	+python3-pyroute2
 endef
 
 define Package/python3-aiodiscover/description

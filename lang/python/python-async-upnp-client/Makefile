@@ -28,7 +28,12 @@ define Package/python3-async-upnp-client
   SUBMENU:=Python
   TITLE:=Async UPnP Client
   URL:=https://pypi.org/project/async-upnp-client/
-  DEPENDS:=+python3-aiohttp +python3-async-timeout +python3-defusedxml +python3-didl-lite +python3-voluptuous
+  DEPENDS:= \
+	+python3-aiohttp \
+	+python3-async-timeout \
+	+python3-defusedxml \
+	+python3-didl-lite \
+	+python3-voluptuous
 endef
 
 define Package/python3-async-upnp-client/description

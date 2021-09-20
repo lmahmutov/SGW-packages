@@ -28,7 +28,8 @@ define Package/homeassistant-cli
   SUBMENU:=Python
   TITLE:=Home Assistant Command-line Interface
   URL:=https://pypi.org/project/homeassistant-cli/
-  DEPENDS:= +python3-aiohttp \
+  DEPENDS:= \
+	+python3-aiohttp \
 	+python3-click-log \
 	+python3-click \
 	+python3-dateparser \

@@ -9,7 +9,7 @@ include $(TOPDIR)/rules.mk
 
 PKG_NAME:=python-psutil
 PKG_VERSION:=5.8.0
-PKG_RELEASE:=1
+PKG_RELEASE:=1a
 
 PYPI_NAME:=psutil
 PKG_HASH:=0c9ccb99ab76025f2f0bbecf341d4656e9c1351db8cc8a03ccd62e318ab4b5c6
@@ -30,7 +30,7 @@ define Package/python3-psutil
   CATEGORY:=Languages
   TITLE:=psutil (process and system utilities)
   URL:=https://github.com/giampaolo/psutil
-  DEPENDS:=+python3-light
+  DEPENDS:=+python3
 endef
 
 define Package/python3-psutil/description
