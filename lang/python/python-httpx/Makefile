@@ -28,11 +28,11 @@ define Package/python3-httpx
   SUBMENU:=Python
   TITLE:=HTTPX - A next-generation HTTP client for Python.
   URL:=https://pypi.org/project/httpx/
-  DEPENDS:=+python3-certifi \
+  DEPENDS:= \
+	+python3-certifi \
 	+python3-httpcore \
 	+python3-rfc3986 \
 	+python3-sniffio \
-	+python3-charset-normalizer
 endef
 
 define Package/python3-httpx/description

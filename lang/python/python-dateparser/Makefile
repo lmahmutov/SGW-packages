@@ -28,10 +28,6 @@ define Package/python3-dateparser
   SUBMENU:=Python
   TITLE:=Date parsing library designed to parse dates from HTML pages
   URL:=https://pypi.org/project/dateparser/
-  DEPENDS:= \
-	+libc \
-	+librt \
-	+libpthread
 endef
 
 define Package/python3-dateparser/description

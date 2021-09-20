@@ -29,9 +29,15 @@ define Package/python3-acme
   TITLE:=ACME in Python.
   URL:=https://pypi.org/project/acme/
   DEPENDS:= \
-	+python3-cryptography +python3-josepy +python3-pyopenssl \
-	+python3-pyrfc3339 +python3-pytz +python3-requests-toolbelt \
-	+python3-requests +python3-setuptools +python3-six	
+	+python3-cryptography \
+	+python3-josepy \
+	+python3-pyopenssl \
+	+python3-pyrfc3339 \
+	+python3-pytz \
+	+python3-requests-toolbelt \
+	+python3-requests \
+	+python3-setuptools \
+	+python3-six	
 endef
 
 define Package/python3-acme/description

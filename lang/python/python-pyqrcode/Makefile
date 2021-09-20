@@ -12,9 +12,10 @@ PKG_VERSION:=1.2.1
 PKG_RELEASE:=1
 
 PYPI_NAME:=PyQRCode
-PKG_HASH:=fdbf7634733e56b72e27f9bce46e4550b75a3a2c420414035cae9d9d26b234d5
+PYPI_SOURCE_EXT:=zip
+PKG_HASH:=1b2812775fa6ff5c527977c4cd2ccb07051ca7d0bc0aecf937a43864abe5eff6
 
-PKG_LICENSE:=MIT
+PKG_LICENSE:=BSD-3-Clause
 PKG_LICENSE_FILES:=LICENSE
 PKG_MAINTAINER:=Lenar Mahmutov <lenz1986@gmail.com>
 
@@ -28,7 +29,7 @@ define Package/python3-pyqrcode
   SUBMENU:=Python
   TITLE:=A QR code generator
   URL:=https://pypi.org/project/pyqrcode/
-  DEPENDS:=
+  DEPENDS:=+python3-pypng
 endef
 
 define Package/python3-pyqrcode/description

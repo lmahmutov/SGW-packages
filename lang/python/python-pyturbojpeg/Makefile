@@ -12,7 +12,7 @@ PKG_VERSION:=1.5.2
 PKG_RELEASE:=1
 
 PYPI_NAME:=pyturbojpeg
-PKG_HASH:=f585cbbeecb35f35609edccb95efd95a3e35824cd7752b586503f7e6087303f1
+PKG_HASH:=a8e5c3fd3d513e524fd0e4e10ff1b50b31952d441515b2c26333eb93bfd23a2c
 
 PKG_MAINTAINER:=Lenar Mahmutov <lenz1986@gmail.com>
 PKG_LICENSE:=MIT
@@ -26,7 +26,7 @@ define Package/python3-pyturbojpeg
   SECTION:=lang
   CATEGORY:=Languages
   SUBMENU:=Python
-  TITLE:=A Python wrapper of libjpeg-turbo for decoding and encoding JPEG image.
+  TITLE:=libjpeg-turbo for decoding and encoding JPEG image.
   URL:=https://pypi.org/project/pyturbojpeg/
   DEPENDS:= \
 	+python3-numpy \
@@ -39,4 +39,4 @@ endef
 
 $(eval $(call Py3Package,python3-pyturbojpeg))
 $(eval $(call BuildPackage,python3-pyturbojpeg))
-$(eval $(call BuildPackage,python3-pyturbojpeg))
+

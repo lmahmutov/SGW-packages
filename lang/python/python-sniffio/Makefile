@@ -28,7 +28,8 @@ define Package/python3-sniffio
   SUBMENU:=Python
   TITLE:=Sniff out which async library.
   URL:=https://pypi.org/project/sniffio/
-  DEPENDS:=+python3-contextvars \
+  DEPENDS:= \
+	+python3-contextvars \
 	+python3-requires
 endef
 

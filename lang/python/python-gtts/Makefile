@@ -28,7 +28,10 @@ define Package/python3-gtts
   SUBMENU:=Python
   TITLE:=Google Translate text-to-speech API.
   URL:=https://pypi.org/project/gtts/
-  DEPENDS:=+python3-click +python3-requests +python3-six
+  DEPENDS:= \
+	+python3-click \
+	+python3-requests \
+	+python3-six
 endef
 
 define Package/python3-gtts/description

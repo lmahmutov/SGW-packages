@@ -12,7 +12,7 @@ PKG_VERSION:=0.9.0
 PKG_RELEASE:=1
 
 PYPI_NAME:=commentjson
-PKG_HASH:=7ba02fd34a12bb3e163303031fc68822eb18d71321c4be1a83976b8ec37ec184
+PKG_HASH:=42f9f231d97d93aff3286a4dc0de39bfd91ae823d1d9eba9fa901fe0c7113dd4
 
 PKG_MAINTAINER:=Lenar Mahmutov <lenz1986@gmail.com>
 PKG_LICENSE:=MIT
@@ -28,11 +28,13 @@ define Package/python3-commentjson
   SUBMENU:=Python
   TITLE:=Add Python and JavaScript style comments in your JSON files.
   URL:=https://pypi.org/project/commentjson/
-  DEPENDS:= +python3-light
+  DEPENDS:= \
+	+python3-lark-parser
 endef
 
 define Package/python3-commentjson/description
- commentjson (Comment JSON) is a Python package that helps you create JSON files with Python and JavaScript style inline comments.
+ commentjson (Comment JSON) is a Python package that helps you create
+ JSON files with Python and JavaScript style inline comments.
  Its API is very similar to the Python standard library’s json module..
 endef
 

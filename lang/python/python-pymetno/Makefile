@@ -28,7 +28,11 @@ define Package/python3-pymetno
   SUBMENU:=Python
   TITLE:= A library to communicate with the met.no api.
   URL:=https://pypi.org/project/pymetno/
-  DEPENDS:=+python3-aiohttp +python3-async-timeout +python3-pytz +python3-xmltodict
+  DEPENDS:= \
+	+python3-aiohttp \
+	+python3-async-timeout \
+	+python3-pytz \
+	+python3-xmltodict
 endef
 
 define Package/python3-pymetno/description

@@ -28,7 +28,11 @@ define Package/python3-pycognito
   SUBMENU:=Python
   TITLE:=Makes working with AWS Cognito easier for Python developers.
   URL:=https://pypi.org/project/pycognito/
-  DEPENDS:= +python3-light
+  DEPENDS:= \
+	+python3-boto3 \
+	+python3-envs \
+	+python3-jose \
+	+python3-requests
 endef
 
 define Package/python3-pycognito/description
