@@ -1,4 +1,4 @@
-# OpenWrt packages feed
+# OpenWrt packages feed for SmartGateway
 
 ## Description
 
@@ -15,12 +15,3 @@ This feed is enabled by default. To install all its package definitions, run:
 ./scripts/feeds update packages
 ./scripts/feeds install -a -p packages
 ```
-
-## License
-
-See [LICENSE](LICENSE) file.
- 
-## Package Guidelines
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) file.
-
