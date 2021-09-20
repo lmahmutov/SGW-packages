@@ -32,7 +32,7 @@ define Package/python3-httpx
 	+python3-certifi \
 	+python3-httpcore \
 	+python3-rfc3986 \
-	+python3-sniffio \
+	+python3-sniffio
 endef
 
 define Package/python3-httpx/description
