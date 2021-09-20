@@ -11,7 +11,7 @@ PKG_NAME:=python-pyturbojpeg
 PKG_VERSION:=1.5.2
 PKG_RELEASE:=1
 
-PYPI_NAME:=pyturbojpeg
+PYPI_NAME:=PyTurboJPEG
 PKG_HASH:=a8e5c3fd3d513e524fd0e4e10ff1b50b31952d441515b2c26333eb93bfd23a2c
 
 PKG_MAINTAINER:=Lenar Mahmutov <lenz1986@gmail.com>

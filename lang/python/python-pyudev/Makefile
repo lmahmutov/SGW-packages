@@ -28,7 +28,9 @@ define Package/python3-pyudev
   SUBMENU:=Python
   TITLE:=A libudev binding.
   URL:=https://pypi.org/project/pyudev/
-  DEPENDS:=+python3-six
+  DEPENDS:= \
+	+python3-six \
+	+libudev-zero
 endef
 
 define Package/python3-pyudev/description
