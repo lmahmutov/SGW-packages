@@ -28,7 +28,7 @@ define Package/python3-sphinx-rtd-theme
   SUBMENU:=Python
   TITLE:=Read the Docs theme for Sphinx.
   URL:=https://pypi.org/project/sphinx-rtd-theme/
-  DEPENDS:= \
+  DEPENDS:= 
 endef
 
 define Package/python3-sphinx-rtd-theme/description

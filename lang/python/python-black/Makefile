@@ -28,7 +28,7 @@ define Package/python3-black
   SUBMENU:=Python
   TITLE:=The uncompromising code formatter.
   URL:=https://pypi.org/project/black/
-  DEPENDS:= \
+  DEPENDS:= 
 endef
 
 define Package/python3-black/description

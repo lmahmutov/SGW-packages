@@ -28,7 +28,7 @@ define Package/python3-pre-commit
   SUBMENU:=Python
   TITLE:=A framework for managing and maintaining multi-language pre-commit hooks.
   URL:=https://pypi.org/project/pre-commit/
-  DEPENDS:= \
+  DEPENDS:= 
 endef
 
 define Package/python3-pre-commit/description

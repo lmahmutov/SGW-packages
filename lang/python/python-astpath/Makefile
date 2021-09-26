@@ -28,7 +28,7 @@ define Package/python3-astpath
   SUBMENU:=Python
   TITLE:=Custom Python linting through AST expressions.
   URL:=https://pypi.org/project/astpath/
-  DEPENDS:= \
+  DEPENDS:= 
 endef
 
 define Package/python3-astpath/description

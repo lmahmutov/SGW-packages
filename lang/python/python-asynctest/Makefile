@@ -28,7 +28,7 @@ define Package/python3-asynctest
   SUBMENU:=Python
   TITLE:=Enhance the standard unittest package with features for testing asyncio libraries.
   URL:=https://pypi.org/project/asynctest/
-  DEPENDS:= \
+  DEPENDS:= 
 endef
 
 define Package/python3-asynctest/description

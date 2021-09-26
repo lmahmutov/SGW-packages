@@ -28,7 +28,7 @@ define Package/python3-aioesphomeapi
   SUBMENU:=Python
   TITLE:=Python API for interacting with ESPHome devices.
   URL:=https://pypi.org/project/aioesphomeapi/
-  DEPENDS:= \
+  DEPENDS:=
 endef
 
 define Package/python3-aioesphomeapi/description

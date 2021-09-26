@@ -28,7 +28,7 @@ define Package/python3-sphinx
   SUBMENU:=Python
   TITLE:=Use the full Github API v3.
   URL:=https://pypi.org/project/sphinx/
-  DEPENDS:= \
+  DEPENDS:= 
 endef
 
 define Package/python3-sphinx/description

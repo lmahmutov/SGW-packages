@@ -28,7 +28,7 @@ define Package/python3-queueman
   SUBMENU:=Python
   TITLE:=No project description provided.
   URL:=https://pypi.org/project/queueman/
-  DEPENDS:= \
+  DEPENDS:= 
 endef
 
 define Package/python3-queueman/description

@@ -28,7 +28,7 @@ define Package/python3-colorlog
   SUBMENU:=Python
   TITLE:=Add colours to the output of Python's logging module.
   URL:=https://pypi.org/project/colorlog/
-  DEPENDS:= \
+  DEPENDS:= 
 endef
 
 define Package/python3-colorlog/description

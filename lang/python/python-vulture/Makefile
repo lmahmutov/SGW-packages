@@ -28,7 +28,7 @@ define Package/python3-vulture
   SUBMENU:=Python
   TITLE:=Find dead code.
   URL:=https://pypi.org/project/vulture/
-  DEPENDS:= \
+  DEPENDS:= 
 endef
 
 define Package/python3-vulture/description

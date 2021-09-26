@@ -50,8 +50,8 @@ Build/Prepare:=:
 Build/Configure:=:
 Build/Compile:=:
 
-define Package/homekit/install
+define Package/hacs/install
 	true
 endef
 
-$(eval $(call BuildPackage,homekit))
+$(eval $(call BuildPackage,hacs))
