@@ -8,7 +8,7 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=python-pytest
-PKG_VERSION:=6.2.3
+PKG_VERSION:=6.2.5
 PKG_RELEASE:=1
 
 PYPI_NAME:=pytest
