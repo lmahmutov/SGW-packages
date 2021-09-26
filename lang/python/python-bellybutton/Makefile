@@ -29,7 +29,7 @@ define Package/python3-bellybutton
   TITLE:=Custom Python linting through AST expressions.
   URL:=https://pypi.org/project/bellybutton/
   DEPENDS:= \
-	+python3-pyyaml \
+	+python3-yaml \
 	+python3-lxml \
 	+python3-astpath
 endef

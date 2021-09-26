@@ -3,7 +3,7 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=hacs
-PKG_VERSION:=0.0.1
+PKG_VERSION:=1.15.2
 PKG_RELEASE:=1
 
 PKG_SOURCE:=
@@ -29,7 +29,7 @@ define Package/hacs
 	+python3-backoff \
 	+python3-bellybutton \
 	+python3-colorlog \
-	+python3-hacs_frontend \
+	+python3-hacs-frontend \
 	+python3-pre-commit \
 	+python3-pygithub \
 	+python3-pytest \
@@ -46,12 +46,10 @@ define Package/hacs/description
  powerful UI to handle downloads of custom integrations and plugins.
 endef
 
-Build/Prepare:=:
-Build/Configure:=:
-Build/Compile:=:
-
-define Package/hacs/install
-	true
+define Py3Package/hacs/install
+	$(INSTALL_DIR) $(1)/etc/homeassistant
+	$(INSTALL_BIN) ./files/* $(1)/etc/homeassistant/
 endef
+
 
 $(eval $(call BuildPackage,hacs))

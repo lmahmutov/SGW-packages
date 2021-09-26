@@ -32,7 +32,7 @@ define Package/python3-aiogithubapi
 	+python3-black \
 	+python3-pdoc3 \
 	+python3-aiohttp \
-	+python3-async_timeout \
+	+python3-async-timeout \
 	+python3-aresponses \
 	+python3-pytest \
 	+python3-pytest-cov \
