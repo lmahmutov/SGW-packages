@@ -22,6 +22,31 @@ include ../pypi.mk
 include $(INCLUDE_DIR)/package.mk
 include ../python3-package.mk
 
+define Py3Package/python3-home-assistant-frontend/filespec
+	+|$(PYTHON3_PKG_DIR)
+	-|$(PYTHON3_PKG_DIR)/hass_frontend/frontend_es5/*.js
+	-|$(PYTHON3_PKG_DIR)/hass_frontend/frontend_es5/*.map
+	-|$(PYTHON3_PKG_DIR)/hass_frontend/frontend_es5/*.txt
+	-|$(PYTHON3_PKG_DIR)/hass_frontend/frontend_latest/*.js
+	-|$(PYTHON3_PKG_DIR)/hass_frontend/frontend_latest/*.map
+	-|$(PYTHON3_PKG_DIR)/hass_frontend/frontend_latest/*.txt
+	-|$(PYTHON3_PKG_DIR)/hass_frontend/static/mdi/*.json
+	-|$(PYTHON3_PKG_DIR)/hass_frontend/static/polyfills/*.js
+	-|$(PYTHON3_PKG_DIR)/hass_frontend/static/polyfills/*.map
+	-|$(PYTHON3_PKG_DIR)/hass_frontend/static/translations/config/*.json
+	-|$(PYTHON3_PKG_DIR)/hass_frontend/static/translations/custom/*.json
+	-|$(PYTHON3_PKG_DIR)/hass_frontend/static/translations/developer-tools/*.json
+	-|$(PYTHON3_PKG_DIR)/hass_frontend/static/translations/energy/*.json
+	-|$(PYTHON3_PKG_DIR)/hass_frontend/static/translations/lovelace/*.json
+	-|$(PYTHON3_PKG_DIR)/hass_frontend/static/translations/mailbox/*.json
+	-|$(PYTHON3_PKG_DIR)/hass_frontend/static/translations/my/*.json
+	-|$(PYTHON3_PKG_DIR)/hass_frontend/static/translations/page-authorize/*.json
+	-|$(PYTHON3_PKG_DIR)/hass_frontend/static/translations/page-demo/*.json
+	-|$(PYTHON3_PKG_DIR)/hass_frontend/static/translations/page-onboarding/*.json
+	-|$(PYTHON3_PKG_DIR)/hass_frontend/static/translations/profile/*.json
+	-|$(PYTHON3_PKG_DIR)/$(PYPI_NAME)-$(PKG_VERSION)-py$(PYTHON3_VERSION).egg-info
+endef
+
 define Package/python3-home-assistant-frontend
   SECTION:=lang
   CATEGORY:=Languages
