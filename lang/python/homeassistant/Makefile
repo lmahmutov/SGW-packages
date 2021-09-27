@@ -92,11 +92,15 @@ define Package/homeassistant/description
 endef
 
 define Py3Package/homeassistant/install
-	$(INSTALL_DIR) $(1)/usr/bin
+	$(INSTALL_DIR) $(1)/usr/bin 
 	$(INSTALL_BIN) $(PKG_INSTALL_DIR)/usr/bin/hass $(1)/usr/bin
 
 	$(INSTALL_DIR) $(1)/etc/init.d
 	$(INSTALL_BIN) ./files/S99hass $(1)/etc/init.d
+
+	$(INSTALL_DIR) $(1)/etc/homeassistant
+	$(INSTALL_BIN) ./files/installed $(1)/etc/homeassistant
+
 endef
 
 define Package/homeassistant/postrm

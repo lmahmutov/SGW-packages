@@ -33,6 +33,7 @@ define Py3Package/python3-home-assistant-frontend/filespec
 	-|$(PYTHON3_PKG_DIR)/hass_frontend/static/mdi/*.json
 	-|$(PYTHON3_PKG_DIR)/hass_frontend/static/polyfills/*.js
 	-|$(PYTHON3_PKG_DIR)/hass_frontend/static/polyfills/*.map
+	-|$(PYTHON3_PKG_DIR)/hass_frontend/static/translations/*.json
 	-|$(PYTHON3_PKG_DIR)/hass_frontend/static/translations/config/*.json
 	-|$(PYTHON3_PKG_DIR)/hass_frontend/static/translations/custom/*.json
 	-|$(PYTHON3_PKG_DIR)/hass_frontend/static/translations/developer-tools/*.json
@@ -44,7 +45,7 @@ define Py3Package/python3-home-assistant-frontend/filespec
 	-|$(PYTHON3_PKG_DIR)/hass_frontend/static/translations/page-demo/*.json
 	-|$(PYTHON3_PKG_DIR)/hass_frontend/static/translations/page-onboarding/*.json
 	-|$(PYTHON3_PKG_DIR)/hass_frontend/static/translations/profile/*.json
-	-|$(PYTHON3_PKG_DIR)/$(PYPI_NAME)-$(PKG_VERSION)-py$(PYTHON3_VERSION).egg-info
+	-|$(PYTHON3_PKG_DIR)/home_assistant_frontend-$(PKG_VERSION)-py$(PYTHON3_VERSION).egg-info
 endef
 
 define Package/python3-home-assistant-frontend
