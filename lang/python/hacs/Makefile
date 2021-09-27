@@ -46,10 +46,12 @@ define Package/hacs/description
  powerful UI to handle downloads of custom integrations and plugins.
 endef
 
-define Py3Package/hacs/install
-	$(INSTALL_DIR) $(1)/etc/homeassistant
-	$(INSTALL_BIN) ./files/* $(1)/etc/homeassistant/
-endef
+Build/Prepare:=:
+Build/Configure:=:
+Build/Compile:=:
 
+define Package/hacs/install
+	true
+endef
 
 $(eval $(call BuildPackage,hacs))

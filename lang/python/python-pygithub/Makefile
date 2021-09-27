@@ -12,7 +12,7 @@ PKG_VERSION:=1.55
 PKG_RELEASE:=1
 
 PYPI_NAME:=PyGithub
-PKG_HASH:=7ba02fd34a12bb3e163303031fc68822eb18d71321c4be1a83976b8ec37ec184
+PKG_HASH:=1bbfff9372047ff3f21d5cd8e07720f3dbfdaf6462fcaed9d815f528f1ba7283
 
 PKG_MAINTAINER:=Lenar Mahmutov <lenz1986@gmail.com>
 PKG_LICENSE:=MIT
@@ -29,9 +29,7 @@ define Package/python3-pygithub
   TITLE:=Use the full Github API v3.
   URL:=https://pypi.org/project/pygithub/
   DEPENDS:= \
-	+python3-pyjwt \
-	+python3-sphinx \
-	+python3-sphinx-rtd-theme
+	+python3-pyjwt
 endef
 
 define Package/python3-pygithub/description
