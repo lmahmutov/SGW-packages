@@ -21,6 +21,7 @@ define Package/ha-zha
   PKG_DEFAULT_DEPENDS:= \
 	+python3-bellows \
 	+python3-zha-quirks \
+	+python3-zigpy-cc \
 	+python3-zigpy-znp \
 	+python3-zigpy-zigate \
 	+python3-zigpy-xbee \
