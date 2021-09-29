@@ -8,11 +8,11 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=python-zigpy
-PKG_VERSION:=0.38.0
+PKG_VERSION:=0.37.1
 PKG_RELEASE:=1
 
 PYPI_NAME:=zigpy
-PKG_HASH:=95b8bc82dccc0cde4ae256e69433344d21fe80c68d4a6d21c3682aa02bb2782f
+PKG_HASH:=4cf224e7478818095ddd96e16ed2a0e2257fc0ea64f60ef5930d1da5a39d88a4
 
 PKG_MAINTAINER:=Lenar Mahmutov <lenz1986@gmail.com>
 PKG_LICENSE:=MIT
@@ -28,7 +28,7 @@ define Package/python3-zigpy
   SUBMENU:=Python
   TITLE:=Library implementing a ZigBee stack.
   URL:=https://pypi.org/project/zigpy/
-  DEPENDS:= +python3-light
+  DEPENDS:= +python3-aiosqlite
 endef
 
 define Package/python3-zigpy/description

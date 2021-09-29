@@ -28,7 +28,8 @@ define Package/python3-zigpy-znp
   SUBMENU:=Python
   TITLE:=A library for zigpy which communicates with TI ZNP radios.
   URL:=https://pypi.org/project/zigpy-znp/
-  DEPENDS:= +python3-light
+  DEPENDS:= +python3-jsonschema \
+	+python3-coloredlogs
 endef
 
 define Package/python3-zigpy-znp/description

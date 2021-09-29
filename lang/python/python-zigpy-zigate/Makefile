@@ -28,7 +28,9 @@ define Package/python3-zigpy-zigate
   SUBMENU:=Python
   TITLE:=A library which communicates with ZiGate radios for zigpy.
   URL:=https://pypi.org/project/zigpy-zigate/
-  DEPENDS:= +python3-light
+  DEPENDS:= +python3-light \
+	+python3-pyusb \
+	+python3-rpi-gpio
 endef
 
 define Package/python3-zigpy-zigate/description
