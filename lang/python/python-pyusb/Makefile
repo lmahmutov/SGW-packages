@@ -28,7 +28,8 @@ define Package/python3-pyusb
   SUBMENU:=Python
   TITLE:=Python USB access module.
   URL:=https://pypi.org/project/pyusb/
-  DEPENDS:= +python3-light
+  DEPENDS:= +python3-humanfriendly \
+	+python3-pyrsistent
 endef
 
 define Package/python3-pyusb/description
