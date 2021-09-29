@@ -25,7 +25,8 @@ define Package/ha-zha
 	+python3-zigpy-znp \
 	+python3-zigpy-zigate \
 	+python3-zigpy-xbee \
-	+python3-zigpy-deconz
+	+python3-zigpy-deconz \
+	+python3-crccheck
 endef
 
 define Package/ha-zha/description

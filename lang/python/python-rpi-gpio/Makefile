@@ -31,6 +31,8 @@ define Package/python3-rpi-gpio
   DEPENDS:= +python3-light
 endef
 
+PYTHON3_PKG_SETUP_ARGS:=
+
 define Package/python3-rpi-gpio/description
  This package provides a class to control the GPIO on a Raspberry Pi.
 endef

@@ -31,6 +31,8 @@ define Package/python3-aiosqlite
   DEPENDS:= +python3-light
 endef
 
+PYTHON3_PKG_SETUP_ARGS:=
+
 define Package/python3-aiosqlite/description
  It replicates the standard sqlite3 module,
  but with async versions of all the standard connection and cursor methods,
