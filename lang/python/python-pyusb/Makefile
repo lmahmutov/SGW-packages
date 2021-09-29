@@ -31,7 +31,7 @@ define Package/python3-pyusb
   DEPENDS:= +python3-light
 endef
 
-define Package/python3-pyusb /description
+define Package/python3-pyusb/description
  PyUSB offers easy USB devices communication in Python.
 endef
 
