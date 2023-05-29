@@ -1,0 +1,61 @@
+#!/bin/sh /etc/rc.common
+
+START=99
+USE_PROCD=1
+PROG=/usr/bin/domoticz
+PIDFILE=/var/run/domoticz.pid
+userdata=/tmp/domoticz/
+
+start_service() {
+	procd_open_instance
+	procd_set_param command "$PROG"
+	procd_append_param command -noupdates
+	procd_append_param command -approot /usr/share/domoticz/
+	procd_append_param command -debuglevel -syslog daemon
+
+	[ -d "${userdata}" ] || {
+		mkdir -p "${userdata}"
+	}
+
+	# By default, ${userdata}/scripts is a symlink to /etc/domoticz/scripts
+	# and the two dzVents directories under there which Domoticz will actually
+	# write to at runtime are symlinked back to /var/lib again.
+	[ -d "${userdata}/plugins" ] || ln -sf /etc/domoticz/plugins "${userdata}/plugins"
+	[ -d "${userdata}/scripts" ] || ln -sf /etc/domoticz/scripts "${userdata}/scripts"
+	for DIR in data generated_scripts; do
+		[ -d /${userdata}/dzVents/$DIR ] || {
+			mkdir -p /${userdata}/dzVents/$DIR
+		}
+	done
+	
+	logger -t domoticz-init "Restoring database";
+
+	cp -rf /etc/domoticz/domoticz.db /tmp/domoticz/domoticz.db 
+	
+	procd_append_param command -userdata "$userdata"
+	procd_append_param command -sslwww 0
+
+	procd_set_param pidfile "$PIDFILE"
+	procd_set_param respawn
+	procd_set_param stdout 0
+	procd_set_param term_timeout 10
+	procd_close_instance
+}
+
+service_stopped()
+{
+	sleep 10
+	logger -t domoticz-init "Copying database";
+	cp -rf /tmp/domoticz/domoticz.db /etc/domoticz/domoticz.db
+}
+
+stop_service()
+{
+	logger -t domoticz-init "Service domoticz recieved stop";
+}
+
+restart_service() {
+        stop
+	sleep 2
+        start
+}

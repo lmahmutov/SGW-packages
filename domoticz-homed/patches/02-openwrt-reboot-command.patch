@@ -1,0 +1,20 @@
+--- a/main/WebServer.cpp	2023-03-21 09:11:54.650726647 +0000
++++ b/main/WebServer.cpp	2023-03-21 10:01:48.000000000 +0000
+@@ -3030,7 +3030,7 @@
+ #ifdef WIN32
+ 			int ret = system("shutdown -s -f -t 1 -d up:125:1");
+ #else
+-			int ret = system("sudo shutdown -h now");
++			int ret = system("/etc/init.d/domoticz stop");
+ #endif
+ 			if (ret != 0)
+ 			{
+@@ -3051,7 +3051,7 @@
+ #ifdef WIN32
+ 			int ret = system("shutdown -r -f -t 1 -d up:125:1");
+ #else
+-			int ret = system("sudo shutdown -r now");
++			int ret = system("/etc/init.d/domoticz restart");
+ #endif
+ 			if (ret != 0)
+ 			{
